@@ -17,7 +17,7 @@ end
 class Bottun < Sprite
     def initialize(x,y)
         super
-        self.image = Image.load("D:/PortableRuby/workspace/test4/image/bottun1.jpg")
+        self.image = Image.load("~kusogame/image/bottun1.jpg")
         self.image.set_color_key(C_WHITE)
         self.x = x
         self.y = y
@@ -33,7 +33,7 @@ end
 
 class Sceane
     def initialize
-        @image = Image.load("D:\PortableRuby\workspace\test4\image\BG00a1_80.jpg")
+        @image = Image.load("~/kusogame/image/BG00a1_80.jpg")
     end
 
     def draw

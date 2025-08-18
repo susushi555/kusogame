@@ -5,7 +5,7 @@ require_relative "gamemap"
 require_relative "menu"
 #require_relative "enemy"
 
-@mapimage = Image.load_tiles("D:/PortableRuby/workspace/test4/image/640x480/map.png",8,11)
+@mapimage = Image.load_tiles("~/kusogame/image/640x480/map.png",8,11)
 
 Window.caption = "TEST"
 
@@ -76,8 +76,8 @@ $rt = RenderTarget.new(640-64, 480-64)
 
 $font1 = Font.new(30,"MS明朝",{:weight=>false, :italic=>false})
 
-$map_base = Map.new("D:/PortableRuby/workspace/test4/mdat/map2.dat", @mapimage, $rt)
-$map_sub = Map.new("D:/PortableRuby/workspace/test4/mdat/map_sub3.dat", @mapimage, $rt)
+$map_base = Map.new("~/kusogame/mdat/map2.dat", @mapimage, $rt)
+$map_sub = Map.new("~/kusogame/mdat/map_sub3.dat", @mapimage, $rt)
 
 
 

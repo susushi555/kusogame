@@ -6,7 +6,7 @@ require_relative 'map'
 map = Array.new(60) { [1] * 60 }
 
 # �G�̃f�[�^�����
-mapimage = Image.load_tiles("C:/Krasnacht/test3/image/640x480/pipo-map001.png",8,11)
+mapimage = Image.load_tiles("~/kusogame/image/640x480/pipo-map001.png",8,11)
 
 
 

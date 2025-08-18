@@ -1,6 +1,6 @@
 class Enemy
 	def initialize
-		@image = Image.load("D:\PortableRuby\workspace\test4\image/ruby.png")
+		@image = Image.load("~/kusogame/image/ruby.png")
 		x = 340
 		y = 120
 	end
