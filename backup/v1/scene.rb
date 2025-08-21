@@ -1,13 +1,13 @@
 module Sceane
     image = Image.new(20,20,C_CYAN)
-    $image2 = Image.load("~/kusogame/image/bottun1.jpg")
-    $image3 = Image.load("~/kusogame/image/bottun1.jpg")
+    $image2 = Image.load("C:/Users/dotdo/OneDrive/ドキュメント/GitHub/kusogame/image/bottun1.jpg")
+    $image3 = Image.load("C:/Users/dotdo/OneDrive/ドキュメント/GitHub/kusogame/image/bottun1.jpg")
     $image3.set_color_key(C_WHITE)
 
-    bottun = Image.load("~/kusogame/image/bottun1.jpg")
+    bottun = Image.load("C:/Users/dotdo/OneDrive/ドキュメント/GitHub/kusogame/image/bottun1.jpg")
     $bottun1 = Sprite.new(0,270,bottun)
-    $sceane1 = Image.load("~/kusogame/image/BG00a1_80.jpg")
-    hpg2 = Image.load("~/kusogame/image/bottun1.jpg")
+    $sceane1 = Image.load("C:/Users/dotdo/OneDrive/ドキュメント/GitHub/kusogame/image/BG00a1_80.jpg")
+    hpg2 = Image.load("C:/Users/dotdo/OneDrive/ドキュメント/GitHub/kusogame/image/bottun1.jpg")
 	$hpg2 = Sprite.new(300,270,hpg2)
     $point = Sprite.new(0,0,image)
 	$hpg = Image.new(120,40,C_GREEN)

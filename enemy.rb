@@ -1,21 +1,29 @@
 class Enemy
-	def initialize
-		@image = Image.load("~/kusogame/image/ruby.png")
-		x = 340
-		y = 120
-	end
+  attr_reader :hp
 
-	$hp = 10
-	def attack
-		$hp = $hp - rand(3.4)
-		Window.draw_font(120,200,"ダメージ",$font1,{:color=>C_BLACK})
-	end
+  def initialize(image_path)
+    begin
+      @image = Image.load(image_path)
+    rescue DXRuby::DXRubyError
+      puts "敵画像 '#{image_path}' が見つかりません。"
+      exit
+    end
+    @x = 340
+    @y = 120
+    @hp = 10
+  end
 
-	def reset
-		$hp = 10
-	end
+  def attack
+    damage = rand(2..4) # 2から4の間のダメージ
+    @hp -= damage
+    puts "#{damage}のダメージ！" # コンソールにダメージ表示
+  end
 
-	def draw
-		Window.draw(340,120,@image)
-	end
+  def reset
+    @hp = 10
+  end
+
+  def draw
+    Window.draw(@x, @y, @image)
+  end
 end
